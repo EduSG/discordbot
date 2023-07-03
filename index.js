@@ -12,7 +12,20 @@ const { join } = require("path");
 const prism = require("prism-media");
 require('dotenv').config();
 prism.FFmpegPath = join(__dirname, "node_modules", "ffmpeg-static", "ffmpeg");
+const express = require("express");
+const app = express();
+const port = 3000;
 
+// Defina uma rota para o webhook
+app.post('/webhook', (req, res) => {
+    // Lógica para tratar o webhook
+    res.sendStatus(200);
+
+});
+
+app.listen(port, () => {
+  console.log(`Servidor iniciado na porta ${port}`);
+});
 
 const client = new Client({
   intents: [
