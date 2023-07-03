@@ -408,4 +408,4 @@ client.on("messageCreate", async (message) => {
   
 });
 
-client.login(secret);
+client.login(process.env.secret);
