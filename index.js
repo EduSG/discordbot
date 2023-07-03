@@ -408,4 +408,4 @@ client.on("messageCreate", async (message) => {
   
 });
 
-client.login('MTA2OTcwMzYzNzcwNzgwNDgzNA.GzJ6MY.u8FhFGkDUciJBJjb7fpt6ivsUARIqVHcRmRji8');
+client.login(secret);
