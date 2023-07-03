@@ -12,9 +12,7 @@ const { join } = require("path");
 const prism = require("prism-media");
 require('dotenv').config();
 prism.FFmpegPath = join(__dirname, "node_modules", "ffmpeg-static", "ffmpeg");
-const express = require("express");
-const app = express();
-const port = 3000;
+
 
 const client = new Client({
   intents: [
